@@ -577,39 +577,6 @@ function showContent(index)
       const inn_1_afterStyles = window.getComputedStyle(hex_1_inn, "::after");
     
    
-      
-
-      hex_1_inn.addEventListener("mouseenter", () => {
-        // Change the styles of the hexagon class
-  
-        hex_1_inn.style.backgroundColor = "red";
-        hex_1_inn.style.setProperty("--inner_1_col_bef", "red");
-        hex_1_inn.style.setProperty("--inner_1_col_aft", "red");
-        hex_4_inn.style.backgroundColor = "red";
-        hex_4_inn.style.setProperty("--inner_4_col_bef", "red");
-        hex_4_inn.style.setProperty("--inner_4_col_aft", "red");
-        hex_5_inn.style.backgroundColor = "red";
-        hex_5_inn.style.setProperty("--inner_5_col_bef", "red");
-        hex_5_inn.style.setProperty("--inner_5_col_aft", "red");
-        hex_6_inn.style.backgroundColor = "red";
-        hex_6_inn.style.setProperty("--inner_6_col_bef", "red");
-        hex_6_inn.style.setProperty("--inner_6_col_aft", "red");
-        hex_7_inn.style.backgroundColor = "red";
-        hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
-        hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
-
-        // content_1_inn.style.display="block";
-        // content_4_inn.style.display="block";
-        // content_7_inn.style.display="block";
-        // content_10_inn.style.display="block";
-        content_head_1.style.display="none";
-        hex_2_inn.style.backgroundColor="black";
-        hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
-        hex_2_inn.style.setProperty("--inner_2_col_aft", "black");
-        hex_3_inn.style.backgroundColor="black";
-        hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
-        hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
-
       content_head_1.addEventListener("mouseenter", () => {
         content_1_inn.style.display="block";
         content_head_1.style.display="none";
@@ -654,6 +621,34 @@ function showContent(index)
         content_head_4.style.display="block";
        
       });
+
+      hex_1_inn.addEventListener("mouseenter", () => {
+        // Change the styles of the hexagon class
+  
+        hex_1_inn.style.backgroundColor = "red";
+        hex_1_inn.style.setProperty("--inner_1_col_bef", "red");
+        hex_1_inn.style.setProperty("--inner_1_col_aft", "red");
+        hex_4_inn.style.backgroundColor = "red";
+        hex_4_inn.style.setProperty("--inner_4_col_bef", "red");
+        hex_4_inn.style.setProperty("--inner_4_col_aft", "red");
+        hex_5_inn.style.backgroundColor = "red";
+        hex_5_inn.style.setProperty("--inner_5_col_bef", "red");
+        hex_5_inn.style.setProperty("--inner_5_col_aft", "red");
+        hex_6_inn.style.backgroundColor = "red";
+        hex_6_inn.style.setProperty("--inner_6_col_bef", "red");
+        hex_6_inn.style.setProperty("--inner_6_col_aft", "red");
+        hex_7_inn.style.backgroundColor = "red";
+        hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
+        hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
+
+        content_head_1.style.display="none";
+        hex_2_inn.style.backgroundColor="black";
+        hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
+        hex_2_inn.style.setProperty("--inner_2_col_aft", "black");
+        hex_3_inn.style.backgroundColor="black";
+        hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
+        hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
+
       });
       
       hex_1_inn.addEventListener("mouseleave", () => {
@@ -696,10 +691,7 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
 
-        // content_2_inn.style.display="block";
-        // content_5_inn.style.display="block";
-        // content_8_inn.style.display="block";
-        // content_11_inn.style.display="block";
+
         hex_1_inn.style.backgroundColor="black";
         hex_1_inn.style.setProperty("--inner_1_col_bef", "black");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "black");
@@ -707,53 +699,8 @@ function showContent(index)
         hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
         hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
 
-
-      content_head_5.addEventListener("mouseenter", () => {
-        content_2_inn.style.display="block";
-        content_head_5.style.display="none";
-        content_1_inn.style.display="none";
-
-      });
-      content_head_5.addEventListener("mouseleave", () => {
-        content_2_inn.style.display="none";
-        content_head_5.style.display="block";
-        content_1_inn.style.display="none";
-       
-       
-      });
-      
-      content_head_6.addEventListener("mouseenter", () => {
-        content_4_inn.style.display="block";
-        content_head_6.style.display="none";
-
-      });
-      content_head_6.addEventListener("mouseleave", () => {
-        content_4_inn.style.display="none";
-        content_head_6.style.display="block";
-       
-      });
-      
-      // content_head_3.addEventListener("mouseenter", () => {
-      //   content_7_inn.style.display="block";
-      //   content_head_3.style.display="none";
-
-      // });
-      // content_head_3.addEventListener("mouseleave", () => {
-      //   content_7_inn.style.display="none";
-      //   content_head_3.style.display="block";
-       
-      // });
-      // content_head_4.addEventListener("mouseenter", () => {
-      //   content_10_inn.style.display="block";
-      //   content_head_4.style.display="none";
-
-      // });
-      // content_head_4.addEventListener("mouseleave", () => {
-      //   content_10_inn.style.display="none";
-      //   content_head_4.style.display="block";
-       
-      // });
-      });
+      }
+      );
       hex_2_inn.addEventListener("mouseleave", () => {
         // Change the styles of the .box class
         hex_2_inn.style.backgroundColor = "blue";
@@ -792,13 +739,9 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
 
-        // content_3_inn.style.display="block";
-        // content_6_inn.style.display="block";
-        // content_9_inn.style.display="block";
-        // content_12_inn.style.display="block";
         hex_1_inn.style.backgroundColor="black";
-        hex_1_inn.style.setProperty("--inner_2_col_bef", "black");
-        hex_1_inn.style.setProperty("--inner_2_col_aft", "black");
+        hex_1_inn.style.setProperty("--inner_1_col_bef", "black");
+        hex_1_inn.style.setProperty("--inner_1_col_aft", "black");
         hex_2_inn.style.backgroundColor="black";
         hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
         hex_2_inn.style.setProperty("--inner_2_col_aft", "black");
@@ -820,12 +763,7 @@ function showContent(index)
         hex_7_inn.style.backgroundColor = "purple";
         hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
-
-        // content_3_inn.style.display="none";
-        // content_6_inn.style.display="none";
-        // content_9_inn.style.display="none";
-        // content_12_inn.style.display="none";
-        
+   
       });
     </script>
      
