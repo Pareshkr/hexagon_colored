@@ -474,8 +474,14 @@
       // const inn_1_beforeStyles = window.getComputedStyle(hex_1_inn, "::before");
       // const inn_1_afterStyles = window.getComputedStyle(hex_1_inn, "::after");
 
-      hex_1_inn.addEventListener("mouseenter", () => {
-        // Change the styles of the hexagon class
+
+      window.onload = function(){
+      var sec = 1;
+      var id = setInterval(colour,1000);
+      
+      
+      function colour(){
+        while(sec<=4){
         hex_1_inn.style.backgroundColor = "red";
         hex_1_inn.style.setProperty("--inner_1_col_bef", "red");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "red");
@@ -496,124 +502,207 @@
         content_4_inn.style.display="block";
         content_7_inn.style.display="block";
         content_10_inn.style.display="block";
-      });
-      hex_1_inn.addEventListener("mouseleave", () => {
-        // Change the styles of the hexagon class
-        hex_1_inn.style.backgroundColor = "#111921";
-        hex_1_inn.style.setProperty("--inner_1_col_bef", "#111921");
-        hex_1_inn.style.setProperty("--inner_1_col_aft", "#111921");
-        hex_4_inn.style.backgroundColor = "#111921";
-        hex_4_inn.style.setProperty("--inner_4_col_bef", "#111921");
-        hex_4_inn.style.setProperty("--inner_4_col_aft", "#111921");
-        hex_5_inn.style.backgroundColor = "#111921";
-        hex_5_inn.style.setProperty("--inner_5_col_bef", "#111921");
-        hex_5_inn.style.setProperty("--inner_5_col_aft", "#111921");
-        hex_6_inn.style.backgroundColor = "#111921";
-        hex_6_inn.style.setProperty("--inner_6_col_bef", "#111921");
-        hex_6_inn.style.setProperty("--inner_6_col_aft", "#111921");
-        hex_7_inn.style.backgroundColor = "#111921";
-        hex_7_inn.style.setProperty("--inner_7_col_bef", "#111921");
-        hex_7_inn.style.setProperty("--inner_7_col_aft", "#111921");
+        sec++;
+        }
 
-        content_1_inn.style.display="none";
-        content_4_inn.style.display="none";
-        content_7_inn.style.display="none";
-        content_10_inn.style.display="none";
-      });
+        
 
-      hex_2_inn.addEventListener("mouseenter", () => {
-        // Change the styles of the .box class
-        hex_2_inn.style.backgroundColor = "blue";
-        hex_2_inn.style.setProperty("--inner_2_col_bef", "blue");
-        hex_2_inn.style.setProperty("--inner_2_col_aft", "blue");
-        hex_4_inn.style.backgroundColor = "blue";
-        hex_4_inn.style.setProperty("--inner_4_col_bef", "blue");
-        hex_4_inn.style.setProperty("--inner_4_col_aft", "blue");
-        hex_5_inn.style.backgroundColor = "blue";
-        hex_5_inn.style.setProperty("--inner_5_col_bef", "blue");
-        hex_5_inn.style.setProperty("--inner_5_col_aft", "blue");
-        hex_6_inn.style.backgroundColor = "blue";
-        hex_6_inn.style.setProperty("--inner_6_col_bef", "blue");
-        hex_6_inn.style.setProperty("--inner_6_col_aft", "blue");
-        hex_7_inn.style.backgroundColor = "blue";
-        hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
-        hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
+  
 
-        content_2_inn.style.display="block";
-        content_5_inn.style.display="block";
-        content_8_inn.style.display="block";
-        content_11_inn.style.display="block";
-      });
-      hex_2_inn.addEventListener("mouseleave", () => {
-        // Change the styles of the .box class
-        hex_2_inn.style.backgroundColor = "#111921";
-        hex_2_inn.style.setProperty("--inner_2_col_bef", "#111921");
-        hex_2_inn.style.setProperty("--inner_2_col_aft", "#111921");
-        hex_4_inn.style.backgroundColor = "#111921";
-        hex_4_inn.style.setProperty("--inner_4_col_bef", "#111921");
-        hex_4_inn.style.setProperty("--inner_4_col_aft", "#111921");
-        hex_5_inn.style.backgroundColor = "#111921";
-        hex_5_inn.style.setProperty("--inner_5_col_bef", "#111921");
-        hex_5_inn.style.setProperty("--inner_5_col_aft", "#111921");
-        hex_6_inn.style.backgroundColor = "#111921";
-        hex_6_inn.style.setProperty("--inner_6_col_bef", "#111921");
-        hex_6_inn.style.setProperty("--inner_6_col_aft", "#111921");
-        hex_7_inn.style.backgroundColor = "#111921";
-        hex_7_inn.style.setProperty("--inner_7_col_bef", "#111921");
-        hex_7_inn.style.setProperty("--inner_7_col_aft", "#111921");
+        // while(sec>=4 && sec<=8){
+       
+        // hex_2_inn.style.backgroundColor = "blue";
+        // hex_2_inn.style.setProperty("--inner_2_col_bef", "blue");
+        // hex_2_inn.style.setProperty("--inner_2_col_aft", "blue");
+        // hex_4_inn.style.backgroundColor = "blue";
+        // hex_4_inn.style.setProperty("--inner_4_col_bef", "blue");
+        // hex_4_inn.style.setProperty("--inner_4_col_aft", "blue");
+        // hex_5_inn.style.backgroundColor = "blue";
+        // hex_5_inn.style.setProperty("--inner_5_col_bef", "blue");
+        // hex_5_inn.style.setProperty("--inner_5_col_aft", "blue");
+        // hex_6_inn.style.backgroundColor = "blue";
+        // hex_6_inn.style.setProperty("--inner_6_col_bef", "blue");
+        // hex_6_inn.style.setProperty("--inner_6_col_aft", "blue");
+        // hex_7_inn.style.backgroundColor = "blue";
+        // hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
+        // hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
 
-        content_2_inn.style.display="none";
-        content_5_inn.style.display="none";
-        content_8_inn.style.display="none";
-        content_11_inn.style.display="none";
-      });
+        // content_2_inn.style.display="block";
+        // content_5_inn.style.display="block";
+        // content_8_inn.style.display="block";
+        // content_11_inn.style.display="block";
 
-      hex_3_inn.addEventListener("mouseenter", () => {
-        // Change the styles of the .box class
-        hex_3_inn.style.backgroundColor = "purple";
-        hex_3_inn.style.setProperty("--inner_3_col_bef", "purple");
-        hex_3_inn.style.setProperty("--inner_3_col_aft", "purple");
-        hex_4_inn.style.backgroundColor = "purple";
-        hex_4_inn.style.setProperty("--inner_4_col_bef", "purple");
-        hex_4_inn.style.setProperty("--inner_4_col_aft", "purple");
-        hex_5_inn.style.backgroundColor = "purple";
-        hex_5_inn.style.setProperty("--inner_5_col_bef", "purple");
-        hex_5_inn.style.setProperty("--inner_5_col_aft", "purple");
-        hex_6_inn.style.backgroundColor = "purple";
-        hex_6_inn.style.setProperty("--inner_6_col_bef", "purple");
-        hex_6_inn.style.setProperty("--inner_6_col_aft", "purple");
-        hex_7_inn.style.backgroundColor = "purple";
-        hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
-        hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
 
-        content_3_inn.style.display="block";
-        content_6_inn.style.display="block";
-        content_9_inn.style.display="block";
-        content_12_inn.style.display="block";
-      });
-      hex_3_inn.addEventListener("mouseleave", () => {
-        // Change the styles of the .box class
-        hex_3_inn.style.backgroundColor = "#111921";
-        hex_3_inn.style.setProperty("--inner_3_col_bef", "#111921");
-        hex_3_inn.style.setProperty("--inner_3_col_aft", "#111921");
-        hex_4_inn.style.backgroundColor = "#111921";
-        hex_4_inn.style.setProperty("--inner_4_col_bef", "#111921");
-        hex_4_inn.style.setProperty("--inner_4_col_aft", "#111921");
-        hex_5_inn.style.backgroundColor = "#111921";
-        hex_5_inn.style.setProperty("--inner_5_col_bef", "#111921");
-        hex_5_inn.style.setProperty("--inner_5_col_aft", "#111921");
-        hex_6_inn.style.backgroundColor = "#111921";
-        hex_6_inn.style.setProperty("--inner_6_col_bef", "#111921");
-        hex_6_inn.style.setProperty("--inner_6_col_aft", "#111921");
-        hex_7_inn.style.backgroundColor = "#111921";
-        hex_7_inn.style.setProperty("--inner_7_col_bef", "#111921");
-        hex_7_inn.style.setProperty("--inner_7_col_aft", "#111921");
+        // sec++;
+        // }
+        // while(sec>=8 && sec<=12){
+        // hex_3_inn.style.backgroundColor = "purple";
+        // hex_3_inn.style.setProperty("--inner_3_col_bef", "purple");
+        // hex_3_inn.style.setProperty("--inner_3_col_aft", "purple");
+        // hex_4_inn.style.backgroundColor = "purple";
+        // hex_4_inn.style.setProperty("--inner_4_col_bef", "purple");
+        // hex_4_inn.style.setProperty("--inner_4_col_aft", "purple");
+        // hex_5_inn.style.backgroundColor = "purple";
+        // hex_5_inn.style.setProperty("--inner_5_col_bef", "purple");
+        // hex_5_inn.style.setProperty("--inner_5_col_aft", "purple");
+        // hex_6_inn.style.backgroundColor = "purple";
+        // hex_6_inn.style.setProperty("--inner_6_col_bef", "purple");
+        // hex_6_inn.style.setProperty("--inner_6_col_aft", "purple");
+        // hex_7_inn.style.backgroundColor = "purple";
+        // hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
+        // hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
 
-        content_3_inn.style.display="none";
-        content_6_inn.style.display="none";
-        content_9_inn.style.display="none";
-        content_12_inn.style.display="none";
-      });
+        // content_3_inn.style.display="block";
+        // content_6_inn.style.display="block";
+        // content_9_inn.style.display="block";
+        // content_12_inn.style.display="block";
+        // sec++;
+        // }
+        
+        
+      }
+     }
+
+      // hex_1_inn.addEventListener("mouseenter", () => {
+      //   // Change the styles of the hexagon class
+      //   hex_1_inn.style.backgroundColor = "red";
+      //   hex_1_inn.style.setProperty("--inner_1_col_bef", "red");
+      //   hex_1_inn.style.setProperty("--inner_1_col_aft", "red");
+      //   hex_4_inn.style.backgroundColor = "red";
+      //   hex_4_inn.style.setProperty("--inner_4_col_bef", "red");
+      //   hex_4_inn.style.setProperty("--inner_4_col_aft", "red");
+      //   hex_5_inn.style.backgroundColor = "red";
+      //   hex_5_inn.style.setProperty("--inner_5_col_bef", "red");
+      //   hex_5_inn.style.setProperty("--inner_5_col_aft", "red");
+      //   hex_6_inn.style.backgroundColor = "red";
+      //   hex_6_inn.style.setProperty("--inner_6_col_bef", "red");
+      //   hex_6_inn.style.setProperty("--inner_6_col_aft", "red");
+      //   hex_7_inn.style.backgroundColor = "red";
+      //   hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
+      //   hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
+
+      //   content_1_inn.style.display="block";
+      //   content_4_inn.style.display="block";
+      //   content_7_inn.style.display="block";
+      //   content_10_inn.style.display="block";
+      // });
+      // hex_1_inn.addEventListener("mouseleave", () => {
+      //   // Change the styles of the hexagon class
+      //   hex_1_inn.style.backgroundColor = "#111921";
+      //   hex_1_inn.style.setProperty("--inner_1_col_bef", "#111921");
+      //   hex_1_inn.style.setProperty("--inner_1_col_aft", "#111921");
+      //   hex_4_inn.style.backgroundColor = "#111921";
+      //   hex_4_inn.style.setProperty("--inner_4_col_bef", "#111921");
+      //   hex_4_inn.style.setProperty("--inner_4_col_aft", "#111921");
+      //   hex_5_inn.style.backgroundColor = "#111921";
+      //   hex_5_inn.style.setProperty("--inner_5_col_bef", "#111921");
+      //   hex_5_inn.style.setProperty("--inner_5_col_aft", "#111921");
+      //   hex_6_inn.style.backgroundColor = "#111921";
+      //   hex_6_inn.style.setProperty("--inner_6_col_bef", "#111921");
+      //   hex_6_inn.style.setProperty("--inner_6_col_aft", "#111921");
+      //   hex_7_inn.style.backgroundColor = "#111921";
+      //   hex_7_inn.style.setProperty("--inner_7_col_bef", "#111921");
+      //   hex_7_inn.style.setProperty("--inner_7_col_aft", "#111921");
+
+      //   content_1_inn.style.display="none";
+      //   content_4_inn.style.display="none";
+      //   content_7_inn.style.display="none";
+      //   content_10_inn.style.display="none";
+      // });
+
+      // hex_2_inn.addEventListener("mouseenter", () => {
+      //   // Change the styles of the .box class
+      //   hex_2_inn.style.backgroundColor = "blue";
+      //   hex_2_inn.style.setProperty("--inner_2_col_bef", "blue");
+      //   hex_2_inn.style.setProperty("--inner_2_col_aft", "blue");
+      //   hex_4_inn.style.backgroundColor = "blue";
+      //   hex_4_inn.style.setProperty("--inner_4_col_bef", "blue");
+      //   hex_4_inn.style.setProperty("--inner_4_col_aft", "blue");
+      //   hex_5_inn.style.backgroundColor = "blue";
+      //   hex_5_inn.style.setProperty("--inner_5_col_bef", "blue");
+      //   hex_5_inn.style.setProperty("--inner_5_col_aft", "blue");
+      //   hex_6_inn.style.backgroundColor = "blue";
+      //   hex_6_inn.style.setProperty("--inner_6_col_bef", "blue");
+      //   hex_6_inn.style.setProperty("--inner_6_col_aft", "blue");
+      //   hex_7_inn.style.backgroundColor = "blue";
+      //   hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
+      //   hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
+
+      //   content_2_inn.style.display="block";
+      //   content_5_inn.style.display="block";
+      //   content_8_inn.style.display="block";
+      //   content_11_inn.style.display="block";
+      // });
+      // hex_2_inn.addEventListener("mouseleave", () => {
+      //   // Change the styles of the .box class
+      //   hex_2_inn.style.backgroundColor = "#111921";
+      //   hex_2_inn.style.setProperty("--inner_2_col_bef", "#111921");
+      //   hex_2_inn.style.setProperty("--inner_2_col_aft", "#111921");
+      //   hex_4_inn.style.backgroundColor = "#111921";
+      //   hex_4_inn.style.setProperty("--inner_4_col_bef", "#111921");
+      //   hex_4_inn.style.setProperty("--inner_4_col_aft", "#111921");
+      //   hex_5_inn.style.backgroundColor = "#111921";
+      //   hex_5_inn.style.setProperty("--inner_5_col_bef", "#111921");
+      //   hex_5_inn.style.setProperty("--inner_5_col_aft", "#111921");
+      //   hex_6_inn.style.backgroundColor = "#111921";
+      //   hex_6_inn.style.setProperty("--inner_6_col_bef", "#111921");
+      //   hex_6_inn.style.setProperty("--inner_6_col_aft", "#111921");
+      //   hex_7_inn.style.backgroundColor = "#111921";
+      //   hex_7_inn.style.setProperty("--inner_7_col_bef", "#111921");
+      //   hex_7_inn.style.setProperty("--inner_7_col_aft", "#111921");
+
+      //   content_2_inn.style.display="none";
+      //   content_5_inn.style.display="none";
+      //   content_8_inn.style.display="none";
+      //   content_11_inn.style.display="none";
+      // });
+
+      // hex_3_inn.addEventListener("mouseenter", () => {
+      //   // Change the styles of the .box class
+      //   hex_3_inn.style.backgroundColor = "purple";
+      //   hex_3_inn.style.setProperty("--inner_3_col_bef", "purple");
+      //   hex_3_inn.style.setProperty("--inner_3_col_aft", "purple");
+      //   hex_4_inn.style.backgroundColor = "purple";
+      //   hex_4_inn.style.setProperty("--inner_4_col_bef", "purple");
+      //   hex_4_inn.style.setProperty("--inner_4_col_aft", "purple");
+      //   hex_5_inn.style.backgroundColor = "purple";
+      //   hex_5_inn.style.setProperty("--inner_5_col_bef", "purple");
+      //   hex_5_inn.style.setProperty("--inner_5_col_aft", "purple");
+      //   hex_6_inn.style.backgroundColor = "purple";
+      //   hex_6_inn.style.setProperty("--inner_6_col_bef", "purple");
+      //   hex_6_inn.style.setProperty("--inner_6_col_aft", "purple");
+      //   hex_7_inn.style.backgroundColor = "purple";
+      //   hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
+      //   hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
+
+      //   content_3_inn.style.display="block";
+      //   content_6_inn.style.display="block";
+      //   content_9_inn.style.display="block";
+      //   content_12_inn.style.display="block";
+      // });
+      // hex_3_inn.addEventListener("mouseleave", () => {
+      //   // Change the styles of the .box class
+      //   hex_3_inn.style.backgroundColor = "#111921";
+      //   hex_3_inn.style.setProperty("--inner_3_col_bef", "#111921");
+      //   hex_3_inn.style.setProperty("--inner_3_col_aft", "#111921");
+      //   hex_4_inn.style.backgroundColor = "#111921";
+      //   hex_4_inn.style.setProperty("--inner_4_col_bef", "#111921");
+      //   hex_4_inn.style.setProperty("--inner_4_col_aft", "#111921");
+      //   hex_5_inn.style.backgroundColor = "#111921";
+      //   hex_5_inn.style.setProperty("--inner_5_col_bef", "#111921");
+      //   hex_5_inn.style.setProperty("--inner_5_col_aft", "#111921");
+      //   hex_6_inn.style.backgroundColor = "#111921";
+      //   hex_6_inn.style.setProperty("--inner_6_col_bef", "#111921");
+      //   hex_6_inn.style.setProperty("--inner_6_col_aft", "#111921");
+      //   hex_7_inn.style.backgroundColor = "#111921";
+      //   hex_7_inn.style.setProperty("--inner_7_col_bef", "#111921");
+      //   hex_7_inn.style.setProperty("--inner_7_col_aft", "#111921");
+
+      //   content_3_inn.style.display="none";
+      //   content_6_inn.style.display="none";
+      //   content_9_inn.style.display="none";
+      //   content_12_inn.style.display="none";
+      // });
     </script>
   </body>
 </html>
