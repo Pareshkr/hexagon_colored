@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hexagon Trial</title>
- 
-    <style>
 
+    <style>
       *,
       *:after,
       *:before {
@@ -42,7 +41,7 @@
         margin: 0 auto;
         padding: 0;
         list-style: none;
- 
+
         /* overflow: scroll; */
       }
 
@@ -55,39 +54,37 @@
         display: flex;
         flex-direction: row;
       }
- 
+
       .hexagon {
         position: relative;
-        width: 200.8px;
-        height: 120.83px;
+        width: 199.8px;
+        height: 128.83px;
         background-color: var(--secondary-blue);
         margin: 48px 0px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-       opacity: 0;
-      
- 
+        opacity: 0;
       }
 
       .hexagon:before {
         content: "";
         position: absolute;
         width: 0;
-        border-left:   99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 102px solid transparent;
+        border-right: 102px solid transparent;
         bottom: 100%;
-        border-bottom: 40px solid var(--secondary-dark-gray);
+        border-bottom: 50px solid var(--secondary-dark-gray);
       }
 
       .hexagon:after {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 102px solid transparent;
+        border-right: 102px solid transparent;
         top: 100%;
-        border-top: 43.41px solid var(--secondary-dark-gray);
+        border-top: 50px solid var(--secondary-dark-gray);
       }
 
       .hexagon.hexagon-blue:before {
@@ -139,14 +136,12 @@
       /*1st Inner Hexagon */
       .hexagon-1-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_1_col, #111921);
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
-       
-        
       }
 
       .hexagon-1-inner::before {
@@ -157,9 +152,9 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_1_col_bef, #111921);
-     
+
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
 
@@ -171,22 +166,22 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_1_col_aft, #111921);
-       
+
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
 
       /*2nd Inner Hexagon */
       .hexagon-2-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_2_col, #111921);
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
-        
+        border-right: 1px solid #e566b9;
       }
 
       .hexagon-2-inner::before {
@@ -197,10 +192,9 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_2_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
-        
       }
 
       .hexagon-2-inner::after {
@@ -211,8 +205,8 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
-       
+        border-top: 50px solid;
+
         border-top-color: var(--inner_2_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -220,8 +214,8 @@
       /*3rd Inner Hexagon */
       .hexagon-3-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_3_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -237,7 +231,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_3_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -250,7 +244,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_3_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -258,8 +252,8 @@
       /*4th Inner Hexagon */
       .hexagon-4-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_4_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -274,7 +268,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_4_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -287,7 +281,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_4_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -295,8 +289,8 @@
       /*5th Inner Hexagon */
       .hexagon-5-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_5_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -311,7 +305,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_5_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -324,7 +318,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_5_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -332,8 +326,8 @@
       /*6th Inner Hexagon */
       .hexagon-6-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_6_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -349,7 +343,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_6_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -362,7 +356,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_6_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -370,8 +364,8 @@
       /*7th Inner Hexagon */
       .hexagon-7-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_7_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -387,7 +381,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_7_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -400,7 +394,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_7_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -410,20 +404,33 @@
         margin: auto;
         font-size: 15px;
       }
-      
-      .content-1,.content-2,.content-3,.content-4,.content-5,.content-6,.content-7,.content-8,.content-9,.content-10,.content-11,.content-12{
-    display: none;
-    color:white;
 
-    }
-    p{
-      font-size: smaller;
-      text-align: left;
-      font-family:'Times New Roman', Times, serif;
-    }
-  .content-head-1,.content-head-2,.content-head-3,.content-head-4{
-    display: none;
-  }
+      .content-1,
+      .content-2,
+      .content-3,
+      .content-4,
+      .content-5,
+      .content-6,
+      .content-7,
+      .content-8,
+      .content-9,
+      .content-10,
+      .content-11,
+      .content-12 {
+        display: none;
+        color: white;
+      }
+      p {
+        font-size: smaller;
+        text-align: left;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .content-head-1,
+      .content-head-2,
+      .content-head-3,
+      .content-head-4 {
+        display: none;
+      }
 
       /* Media queries */
       /* @media (max-width: 780px) and (min-width: 640px) {
@@ -448,45 +455,38 @@
         }
       } */
 
-       @keyframes hello {
-         from{
-             transform: translateY(600px);
-             
-         }
-         to{
+      @keyframes hello {
+        from {
+          transform: translateY(600px);
+        }
+        to {
           transform: translateY(0);
-          
-         }
-       } 
-      .hexagon-grid-container{
+        }
+      }
+      .hexagon-grid-container {
         animation-name: hello;
         animation-duration: 1s;
         animation-timing-function: ease-out;
         animation-delay: 0s;
         animation-iteration-count: 1;
-    
       }
-      .focus {
-   
-    transform: scale(1.1); /* Increase size for focused hexagon */
-}
 
-   
+      .focus {
+        transform: scale(1); /* Increase size for focused hexagon */
+      }
     </style>
-    
-    
   </head>
   <body>
-   
-    <ul class="hexagon-grid-container"  >
+    <ul class="hexagon-grid-container">
       <h2>Languages To Learn FullStack Developer</h2>
       <div class="hexagon-upper-row">
-        <li class="hexagon hexagon-blue" >
+        <li class="hexagon hexagon-blue">
           <div class="hexagon-1-inner" onmouseover="showContent(0)">
-            <span class="hexagon-content" > <h2>FrontEnd</h2> </span>
+            <span class="hexagon-content"> <h2>FrontEnd</h2> </span>
           </div>
         </li>
-        <li class="hexagon hexagon-blue" >
+
+        <li class="hexagon hexagon-blue">
           <div class="hexagon-2-inner" onmouseover="showContent(1)">
             <span class="hexagon-content"> <h2>BackEnd</h2> </span>
           </div>
@@ -502,22 +502,44 @@
       <div class="hexagon-lower-row">
         <li class="hexagon hexagon-blue">
           <div class="hexagon-4-inner">
-            <h4 class="content-head-1">HTML </h4>
-             <h4 class="content-head-1" >C++</h4>
-            <h4 class="content-head-1" >MySQL</h4> 
-            <p class="content-1" >Hyper Text Markup Language used to design web pages.It is one of the most basic building blocks of every website, so it's crucial to learn if you want to have a career in web development.</p>
-            <p class="content-2" >C++ is a most popular cross-platform programming language which is used to create high-performance applications and software like OS, Games, E-commerce software, etc.</p>
-            <p class="content-3">MySQL is a  database used to organised data and store data in tabular form.MySQL is a freely available database system.</p>
+            <h4 class="content-head-1">HTML</h4>
+            <h4 class="content-head-1">C++</h4>
+            <h4 class="content-head-1">MySQL</h4>
+            <p class="content-1">
+              Hyper Text Markup Language used to design web pages.It is one of
+              the most basic building blocks of every website, so it's crucial
+              to learn if you want to have a career in web development.
+            </p>
+            <p class="content-2">
+              C++ is a most popular cross-platform programming language which is
+              used to create high-performance applications and software like OS,
+              Games, E-commerce software, etc.
+            </p>
+            <p class="content-3">
+              MySQL is a database used to organised data and store data in
+              tabular form.MySQL is a freely available database system.
+            </p>
           </div>
         </li>
         <li class="hexagon hexagon-blue">
           <div class="hexagon-5-inner">
-            <h4 class="content-head-2" >CSS</h4>
+            <h4 class="content-head-2">CSS</h4>
             <h4 class="content-head-2">Python</h4>
             <h4 class="content-head-2">Oracle</h4>
-            <p class="content-4">CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language.</p>
-            <p class="content-5">Python is a general-purpose language which means it is versatile and can be used to program many different types of functions.</p> 
-            <p class="content-6">Its database is also known as Oracle. It is a multi-model relational database management system mainly designed for enterprise grid computing and data warehousing. </p>
+            <p class="content-4">
+              CSS stands for Cascading Style Sheets. It is a style sheet
+              language which is used to describe the look and formatting of a
+              document written in markup language.
+            </p>
+            <p class="content-5">
+              Python is a general-purpose language which means it is versatile
+              and can be used to program many different types of functions.
+            </p>
+            <p class="content-6">
+              Its database is also known as Oracle. It is a multi-model
+              relational database management system mainly designed for
+              enterprise grid computing and data warehousing.
+            </p>
           </div>
         </li>
         <li class="hexagon hexagon-blue">
@@ -525,9 +547,21 @@
             <h4 class="content-head-3">JavaScript</h4>
             <h4 class="content-head-3">Java</h4>
             <h4 class="content-head-3">MongoDB</h4>
-            <p class="content-7">JavaScript is a dynamic language that's used for web development. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.</p>
-            <p class="content-8"> Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is a computing platform for application development. </p>
-            <p class="content-9">MongoDB is a document-oriented NoSQL database used for high volume data storage. </p>
+            <p class="content-7">
+              JavaScript is a dynamic language that's used for web development.
+              It allows you to implement dynamic features on web pages that
+              cannot be done with only HTML and CSS.
+            </p>
+            <p class="content-8">
+              Java is a general-purpose, class-based, object-oriented
+              programming language designed for having lesser implementation
+              dependencies. It is a computing platform for application
+              development.
+            </p>
+            <p class="content-9">
+              MongoDB is a document-oriented NoSQL database used for high volume
+              data storage.
+            </p>
           </div>
         </li>
         <li class="hexagon hexagon-blue">
@@ -535,7 +569,10 @@
             <h4 class="content-head-4">BootStrap</h4>
             <h4 class="content-head-4">PHP</h4>
             <h4 class="content-head-4">SQLServer</h4>
-            <p class="content-10">Bootstrap is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website.It is a framework used for easier and faster web development.
+            <p class="content-10">
+              Bootstrap is the most popular HTML, CSS and JavaScript framework
+              for developing a responsive and mobile friendly website.It is a
+              framework used for easier and faster web development.
             </p>
             <p class="content-11">
               The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is
@@ -552,41 +589,39 @@
     </ul>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        const hexagons = document.querySelectorAll(".hexagon");
-        hexagons.forEach(function(hexagon, index) {
-            setTimeout(function() {
-                hexagon.style.opacity = "1";
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          const hexagons = document.querySelectorAll(".hexagon");
+          hexagons.forEach(function (hexagon, index) {
+            setTimeout(function () {
+              hexagon.style.opacity = "1";
             }, index * 600); // Adjust the delay as needed
+          });
+        }, 1000); // 2-second delay
+      });
+      function showContent(index) {
+        const contents = document.querySelectorAll(".content-head-1");
+        contents.forEach((content, i) => {
+          content.style.display = i === index ? "block" : "none";
         });
-    },1000); // 2-second delay
-});
-function showContent(index) 
-    {
-      
-    const contents = document.querySelectorAll(".content-head-1");
-    contents.forEach((content, i) => {
-        content.style.display = i === index ? "block" : "none";
-    });
-    const contents2 = document.querySelectorAll(".content-head-2");
-    contents2.forEach((content, i) => {
-        content.style.display = i === index ? "block" : "none";
-    });
-    const contents3 = document.querySelectorAll(".content-head-3");
-    contents3.forEach((content, i) => {
-        content.style.display = i === index ? "block" : "none";
-    });
-    const contents4 = document.querySelectorAll(".content-head-4");
-    contents4.forEach((content, i) => {
-        content.style.display = i === index ? "block" : "none";
-    });
-   
-    const hexagons = document.querySelectorAll(".hexagon");
-    hexagons.forEach((hexagon, i) => {
-        hexagon.classList.toggle("focus", i === index);
-    });
-}
+        const contents2 = document.querySelectorAll(".content-head-2");
+        contents2.forEach((content, i) => {
+          content.style.display = i === index ? "block" : "none";
+        });
+        const contents3 = document.querySelectorAll(".content-head-3");
+        contents3.forEach((content, i) => {
+          content.style.display = i === index ? "block" : "none";
+        });
+        const contents4 = document.querySelectorAll(".content-head-4");
+        contents4.forEach((content, i) => {
+          content.style.display = i === index ? "block" : "none";
+        });
+
+        const hexagons = document.querySelectorAll(".hexagon");
+        hexagons.forEach((hexagon, i) => {
+          hexagon.classList.toggle("focus", i === index);
+        });
+      }
 
       // Get the hexagon inner element
       const hex_1_inn = document.querySelector(".hexagon-1-inner");
@@ -597,83 +632,74 @@ function showContent(index)
       const hex_6_inn = document.querySelector(".hexagon-6-inner");
       const hex_7_inn = document.querySelector(".hexagon-7-inner");
 
-      const content_head_1=document.querySelector(".content-head-1");
-      const content_head_2=document.querySelector(".content-head-2");
-       const content_head_3=document.querySelector(".content-head-3");
-       const content_head_4=document.querySelector(".content-head-4");
+      const content_head_1 = document.querySelector(".content-head-1");
+      const content_head_2 = document.querySelector(".content-head-2");
+      const content_head_3 = document.querySelector(".content-head-3");
+      const content_head_4 = document.querySelector(".content-head-4");
 
-       const content_head_5=document.querySelector(".content-head-1");
-      const content_head_6=document.querySelector(".content-head-2");
-       const content_head_7=document.querySelector(".content-head-3");
-       const content_head_8=document.querySelector(".content-head-4")
-   
+      const content_head_5 = document.querySelector(".content-head-1");
+      const content_head_6 = document.querySelector(".content-head-2");
+      const content_head_7 = document.querySelector(".content-head-3");
+      const content_head_8 = document.querySelector(".content-head-4");
 
-      const content_1_inn=document.querySelector(".content-1");
-      const content_2_inn=document.querySelector(".content-2");
-      const content_3_inn=document.querySelector(".content-3");
-      const content_4_inn=document.querySelector(".content-4");
-      const content_5_inn=document.querySelector(".content-5");
-      const content_6_inn=document.querySelector(".content-6");
-      const content_7_inn=document.querySelector(".content-7");
-      const content_8_inn=document.querySelector(".content-8");
-      const content_9_inn=document.querySelector(".content-9");
-      const content_10_inn=document.querySelector(".content-10");
-      const content_11_inn=document.querySelector(".content-11");
-      const content_12_inn=document.querySelector(".content-12");
+      const content_1_inn = document.querySelector(".content-1");
+      const content_2_inn = document.querySelector(".content-2");
+      const content_3_inn = document.querySelector(".content-3");
+      const content_4_inn = document.querySelector(".content-4");
+      const content_5_inn = document.querySelector(".content-5");
+      const content_6_inn = document.querySelector(".content-6");
+      const content_7_inn = document.querySelector(".content-7");
+      const content_8_inn = document.querySelector(".content-8");
+      const content_9_inn = document.querySelector(".content-9");
+      const content_10_inn = document.querySelector(".content-10");
+      const content_11_inn = document.querySelector(".content-11");
+      const content_12_inn = document.querySelector(".content-12");
 
       // Get the computed styles of the ::before and ::after pseudo-elements
       const inn_1_beforeStyles = window.getComputedStyle(hex_1_inn, "::before");
       const inn_1_afterStyles = window.getComputedStyle(hex_1_inn, "::after");
-    
-   
-      content_head_1.addEventListener("mouseenter", () => {
-        content_1_inn.style.display="block";
-        content_head_1.style.display="none";
-         content_2_inn.style.display="none";
-      });
-     
-      content_head_1.addEventListener("mouseleave", () => {
-        content_1_inn.style.display="none";
-        content_head_1.style.display="block";
-        content_2_inn.style.display="none";
-       
-      });
-      
-      content_head_2.addEventListener("mouseenter", () => {
-        content_4_inn.style.display="block";
-        content_head_2.style.display="none";
 
+      content_head_1.addEventListener("mouseenter", () => {
+        content_1_inn.style.display = "block";
+        content_head_1.style.display = "none";
+        content_2_inn.style.display = "none";
+      });
+
+      content_head_1.addEventListener("mouseleave", () => {
+        content_1_inn.style.display = "none";
+        content_head_1.style.display = "block";
+        content_2_inn.style.display = "none";
+      });
+
+      content_head_2.addEventListener("mouseenter", () => {
+        content_4_inn.style.display = "block";
+        content_head_2.style.display = "none";
       });
       content_head_2.addEventListener("mouseleave", () => {
-        content_4_inn.style.display="none";
-        content_head_2.style.display="block";
-       
+        content_4_inn.style.display = "none";
+        content_head_2.style.display = "block";
       });
-      
-      content_head_3.addEventListener("mouseenter", () => {
-        content_7_inn.style.display="block";
-        content_head_3.style.display="none";
 
+      content_head_3.addEventListener("mouseenter", () => {
+        content_7_inn.style.display = "block";
+        content_head_3.style.display = "none";
       });
       content_head_3.addEventListener("mouseleave", () => {
-        content_7_inn.style.display="none";
-        content_head_3.style.display="block";
-       
+        content_7_inn.style.display = "none";
+        content_head_3.style.display = "block";
       });
       content_head_4.addEventListener("mouseenter", () => {
-        content_10_inn.style.display="block";
-        content_head_4.style.display="none";
-
+        content_10_inn.style.display = "block";
+        content_head_4.style.display = "none";
       });
       content_head_4.addEventListener("mouseleave", () => {
-        content_10_inn.style.display="none";
-        content_head_4.style.display="block";
-       
+        content_10_inn.style.display = "none";
+        content_head_4.style.display = "block";
       });
 
       hex_1_inn.addEventListener("mouseenter", () => {
         // Change the styles of the hexagon class
-  
+
         hex_1_inn.style.backgroundColor = "red";
         hex_1_inn.style.setProperty("--inner_1_col_bef", "red");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "red");
@@ -690,26 +716,25 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
 
-        content_head_1.style.display="none";
-        hex_2_inn.style.backgroundColor="black";
+        content_head_1.style.display = "none";
+        hex_2_inn.style.backgroundColor = "black";
         hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
         hex_2_inn.style.setProperty("--inner_2_col_aft", "black");
-        hex_3_inn.style.backgroundColor="black";
+        hex_3_inn.style.backgroundColor = "black";
         hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
         hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
-
       });
-      
+
       hex_1_inn.addEventListener("mouseleave", () => {
         // Change the styles of the hexagon class
         hex_1_inn.style.backgroundColor = "red";
-        hex_1_inn.style.setProperty("--inner_1_col_bef","red");
+        hex_1_inn.style.setProperty("--inner_1_col_bef", "red");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "red");
         hex_4_inn.style.backgroundColor = "red";
-        hex_4_inn.style.setProperty("--inner_4_col_bef","red");
+        hex_4_inn.style.setProperty("--inner_4_col_bef", "red");
         hex_4_inn.style.setProperty("--inner_4_col_aft", "red");
         hex_5_inn.style.backgroundColor = "red";
-        hex_5_inn.style.setProperty("--inner_5_col_bef","red");
+        hex_5_inn.style.setProperty("--inner_5_col_bef", "red");
         hex_5_inn.style.setProperty("--inner_5_col_aft", "red");
         hex_6_inn.style.backgroundColor = "red";
         hex_6_inn.style.setProperty("--inner_6_col_bef", "red");
@@ -718,8 +743,7 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
 
-        content_head_1.style.display="block";
-
+        content_head_1.style.display = "block";
       });
 
       hex_2_inn.addEventListener("mouseenter", () => {
@@ -740,16 +764,13 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
 
-
-        hex_1_inn.style.backgroundColor="black";
+        hex_1_inn.style.backgroundColor = "black";
         hex_1_inn.style.setProperty("--inner_1_col_bef", "black");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "black");
-        hex_3_inn.style.backgroundColor="black";
+        hex_3_inn.style.backgroundColor = "black";
         hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
         hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
-
-      }
-      );
+      });
       hex_2_inn.addEventListener("mouseleave", () => {
         // Change the styles of the .box class
         hex_2_inn.style.backgroundColor = "blue";
@@ -767,7 +788,6 @@ function showContent(index)
         hex_7_inn.style.backgroundColor = "blue";
         hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
-
       });
 
       hex_3_inn.addEventListener("mouseenter", () => {
@@ -788,12 +808,12 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
 
-        hex_1_inn.style.backgroundColor="black";
+        hex_1_inn.style.backgroundColor = "black";
         hex_1_inn.style.setProperty("--inner_1_col_bef", "black");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "black");
-        hex_2_inn.style.backgroundColor="black";
-        hex_2_inn.style.setProperty("--inner_1_col_bef", "black");
-        hex_2_inn.style.setProperty("--inner_1_col_aft", "black");
+        hex_2_inn.style.backgroundColor = "black";
+        hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
+        hex_2_inn.style.setProperty("--inner_2_col_aft", "black");
       });
       hex_3_inn.addEventListener("mouseleave", () => {
         // Change the styles of the .box class
@@ -812,10 +832,7 @@ function showContent(index)
         hex_7_inn.style.backgroundColor = "purple";
         hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
-   
       });
     </script>
-     
-     
   </body>
 </html>
