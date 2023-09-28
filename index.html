@@ -58,14 +58,14 @@
  
       .hexagon {
         position: relative;
-        width: 200.8px;
-        height: 120.83px;
+        width: 199.8px;
+        height: 128.83px;
         background-color: var(--secondary-blue);
-        margin: 48px 6px 0;
+        margin: 48px 0px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-       opacity: 0;
+        opacity: 0;
       
  
       }
@@ -74,43 +74,86 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left:   99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left:   102px solid transparent;
+        border-right: 102px solid transparent;
         bottom: 100%;
-        border-bottom: 40px solid var(--secondary-dark-gray);
+        border-bottom: 50px solid var(--secondary-dark-gray);
       }
 
       .hexagon:after {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 102px solid transparent;
+        border-right: 102px solid transparent;
         top: 100%;
-        border-top: 43.41px solid var(--secondary-dark-gray);
+        border-top: 50px solid var(--secondary-dark-gray);
       }
 
       .hexagon.hexagon-blue:before {
-        border-bottom: 40.41px solid var(--secondary-blue);
+        border-bottom: 52px solid var(--secondary-blue);
       }
 
       .hexagon.hexagon-blue:after {
-        border-top: 40.41px solid var(--secondary-blue);
+        border-top: 52px solid var(--secondary-blue);
       }
+      .hexagon:nth-child(1) {
+            background-color: #3c8fe7;     
+        } 
+        .hexagon:nth-child(1)::before
+        {
+          border-bottom-color: #3c8fe7;
+        }
+        .hexagon:nth-child(1)::after{
+          border-top-color: #3c8fe7;
+        }
 
+        .hexagon:nth-child(2) {
+            background-color:#e566b9;
+        } 
+        .hexagon:nth-child(2)::before
+        {
+          border-bottom-color:#e566b9;
+        }
+        .hexagon:nth-child(2)::after{
+          border-top-color:#e566b9;
+        }
+
+      
+        .hexagon:nth-child(3) {
+            background-color:#6ccba0;
+        } 
+        .hexagon:nth-child(3)::before
+        {
+          border-bottom-color:#6ccba0;
+        }
+        .hexagon:nth-child(3)::after{
+          border-top-color:#6ccba0;
+        }
+        .hexagon:nth-child(4) {
+            background-color:#5e8ac6;
+        } 
+        .hexagon:nth-child(4)::before
+        {
+          border-bottom-color:#5e8ac6;
+        }
+        .hexagon:nth-child(4)::after{
+          border-top-color:#5e8ac6;
+        }
+
+      
       /*1st Inner Hexagon */
       .hexagon-1-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_1_col, #111921);
         margin: 39.26px 0;
         display: flex;
-        justify-content: center;
-       
+        justify-content: center; 
         
       }
-
+     
       .hexagon-1-inner::before {
         content: "";
         position: absolute;
@@ -119,7 +162,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_1_col_bef, #111921);
      
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
@@ -133,22 +176,22 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_1_col_aft, #111921);
        
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
-
+      
       /*2nd Inner Hexagon */
       .hexagon-2-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_2_col, #111921);
         margin: 39.26px 0;
         display: flex;
-        justify-content: center;
-        
+        justify-content: center; 
+        border-right: 1px solid #e566b9; 
       }
 
       .hexagon-2-inner::before {
@@ -159,7 +202,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_2_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
         
@@ -173,7 +216,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
        
         border-top-color: var(--inner_2_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
@@ -182,12 +225,13 @@
       /*3rd Inner Hexagon */
       .hexagon-3-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_3_col, #111921);
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
+        border-right: 0.91px solid #6ccba0; 
       }
 
       .hexagon-3-inner::before {
@@ -198,7 +242,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_3_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -211,7 +255,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_3_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -219,8 +263,8 @@
       /*4th Inner Hexagon */
       .hexagon-4-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_4_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -235,7 +279,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_4_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -248,7 +292,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_4_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -256,8 +300,8 @@
       /*5th Inner Hexagon */
       .hexagon-5-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_5_col, #111921);
         margin: 39.26px 0;
         display: flex;
@@ -272,7 +316,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_5_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -285,7 +329,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_5_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -293,12 +337,13 @@
       /*6th Inner Hexagon */
       .hexagon-6-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_6_col, #111921);
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
+        border-right: 0.91px solid #6ccba0; 
       }
 
       .hexagon-6-inner::before {
@@ -309,7 +354,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_6_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -322,7 +367,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_6_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -330,12 +375,13 @@
       /*7th Inner Hexagon */
       .hexagon-7-inner {
         position: relative;
-        width: 196px;
-        height: 114.52px;
+        width: 199px;
+        height: 128.52px;
         background-color: var(--inner_7_col, #111921);
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
+        border-right: 0.91px solid #5e8ac6; 
       }
 
       .hexagon-7-inner::before {
@@ -346,7 +392,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         bottom: 100%;
-        border-bottom: 41px solid;
+        border-bottom: 50px solid;
         border-bottom-color: var(--inner_7_col_bef, #111921);
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
@@ -359,7 +405,7 @@
         border-right: 99px solid transparent;
         z-index: 1;
         top: 100%;
-        border-top: 41px solid;
+        border-top: 50px solid;
         border-top-color: var(--inner_7_col_aft, #111921);
         /* border-top: 39.26px solid var(--secondary-light-gray); */
       }
@@ -425,10 +471,11 @@
         animation-iteration-count: 1;
     
       }
+   
       .focus {
    
-    transform: scale(1.1); /* Increase size for focused hexagon */
-}
+               transform: scale(1.0); /* Increase size for focused hexagon */
+             }
 
    
     </style>
@@ -442,9 +489,10 @@
       <div class="hexagon-upper-row">
         <li class="hexagon hexagon-blue" >
           <div class="hexagon-1-inner" onmouseover="showContent(0)">
-            <span class="hexagon-content" > <h2>FrontEnd</h2> </span>
+            <span class="hexagon-content" > <h2>FrontEnd</h2> </span> 
           </div>
         </li>
+        
         <li class="hexagon hexagon-blue" >
           <div class="hexagon-2-inner" onmouseover="showContent(1)">
             <span class="hexagon-content"> <h2>BackEnd</h2> </span>
@@ -456,6 +504,7 @@
           </div>
         </li>
       </div>
+      <div><br></div>
 
       <div class="hexagon-lower-row">
         <li class="hexagon hexagon-blue">
@@ -511,7 +560,7 @@
                 hexagon.style.opacity = "1";
             }, index * 600); // Adjust the delay as needed
         });
-    },1000); // 1-second delay
+    },1000); // 2-second delay
 });
 function showContent(index) 
     {
@@ -553,7 +602,10 @@ function showContent(index)
        const content_head_3=document.querySelector(".content-head-3");
        const content_head_4=document.querySelector(".content-head-4");
 
-    
+       const content_head_5=document.querySelector(".content-head-1");
+      const content_head_6=document.querySelector(".content-head-2");
+       const content_head_7=document.querySelector(".content-head-3");
+       const content_head_8=document.querySelector(".content-head-4")
    
 
       const content_1_inn=document.querySelector(".content-1");
@@ -573,6 +625,7 @@ function showContent(index)
       const inn_1_beforeStyles = window.getComputedStyle(hex_1_inn, "::before");
       const inn_1_afterStyles = window.getComputedStyle(hex_1_inn, "::after");
     
+   
       content_head_1.addEventListener("mouseenter", () => {
         content_1_inn.style.display="block";
         content_head_1.style.display="none";
@@ -617,7 +670,6 @@ function showContent(index)
         content_head_4.style.display="block";
        
       });
-      
 
       hex_1_inn.addEventListener("mouseenter", () => {
         // Change the styles of the hexagon class
@@ -638,7 +690,6 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
 
-      
         content_head_1.style.display="none";
         hex_2_inn.style.backgroundColor="black";
         hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
@@ -647,7 +698,6 @@ function showContent(index)
         hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
         hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
 
-     
       });
       
       hex_1_inn.addEventListener("mouseleave", () => {
@@ -668,7 +718,7 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "red");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "red");
 
-        
+        content_head_1.style.display="block";
 
       });
 
@@ -690,15 +740,16 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_bef", "blue");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "blue");
 
-       
+
         hex_1_inn.style.backgroundColor="black";
         hex_1_inn.style.setProperty("--inner_1_col_bef", "black");
         hex_1_inn.style.setProperty("--inner_1_col_aft", "black");
         hex_3_inn.style.backgroundColor="black";
         hex_3_inn.style.setProperty("--inner_3_col_bef", "black");
         hex_3_inn.style.setProperty("--inner_3_col_aft", "black");
- 
-      });
+
+      }
+      );
       hex_2_inn.addEventListener("mouseleave", () => {
         // Change the styles of the .box class
         hex_2_inn.style.backgroundColor = "blue";
@@ -738,8 +789,8 @@ function showContent(index)
         hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
 
         hex_1_inn.style.backgroundColor="black";
-        hex_1_inn.style.setProperty("--inner_2_col_bef", "black");
-        hex_1_inn.style.setProperty("--inner_2_col_aft", "black");
+        hex_1_inn.style.setProperty("--inner_1_col_bef", "black");
+        hex_1_inn.style.setProperty("--inner_1_col_aft", "black");
         hex_2_inn.style.backgroundColor="black";
         hex_2_inn.style.setProperty("--inner_2_col_bef", "black");
         hex_2_inn.style.setProperty("--inner_2_col_aft", "black");
@@ -761,7 +812,7 @@ function showContent(index)
         hex_7_inn.style.backgroundColor = "purple";
         hex_7_inn.style.setProperty("--inner_7_col_bef", "purple");
         hex_7_inn.style.setProperty("--inner_7_col_aft", "purple");
-  
+   
       });
     </script>
      
