@@ -65,8 +65,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0;
-      
+        opacity: 1;
+       
  
       }
 
@@ -74,8 +74,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left:   102px solid transparent;
-        border-right: 102px solid transparent;
+        border-left:   101px solid transparent;
+        border-right: 101px solid transparent;
         bottom: 100%;
         border-bottom: 50px solid var(--secondary-dark-gray);
       }
@@ -84,63 +84,81 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 102px solid transparent;
+        border-left: 100px solid transparent;
         border-right: 102px solid transparent;
         top: 100%;
         border-top: 50px solid var(--secondary-dark-gray);
       }
 
       .hexagon.hexagon-blue:before {
-        border-bottom: 52px solid var(--secondary-blue);
+        border-bottom: 51px solid var(--secondary-blue);
       }
 
       .hexagon.hexagon-blue:after {
-        border-top: 52px solid var(--secondary-blue);
+        border-top: 51px solid var(--secondary-blue);
       }
+      
       .hexagon:nth-child(1) {
-            background-color: #3c8fe7;     
+            background-color:  #1c5797;
+            border-left: solid 1px #111921; 
+          
         } 
         .hexagon:nth-child(1)::before
         {
-          border-bottom-color: #3c8fe7;
+          border-bottom-color: #1c5797;
         }
         .hexagon:nth-child(1)::after{
-          border-top-color: #3c8fe7;
+          border-top-color:  #1c5797;
         }
 
         .hexagon:nth-child(2) {
-            background-color:#e566b9;
+            background-color:#7d106d;
+            border-left: solid 1px #111921;
         } 
         .hexagon:nth-child(2)::before
         {
-          border-bottom-color:#e566b9;
+          border-bottom-color:#7d106d;
         }
         .hexagon:nth-child(2)::after{
-          border-top-color:#e566b9;
+          border-top-color:#7d106d;
         }
 
       
         .hexagon:nth-child(3) {
-            background-color:#6ccba0;
+            background-color:#3f916c;
+            border-left: solid 1px black;
         } 
         .hexagon:nth-child(3)::before
         {
-          border-bottom-color:#6ccba0;
+          border-bottom-color:#3f916c;
         }
         .hexagon:nth-child(3)::after{
-          border-top-color:#6ccba0;
+          border-top-color:#3f916c;
         }
         .hexagon:nth-child(4) {
-            background-color:#5e8ac6;
+            background-color:#1c5797;
+            border-left: solid 1px black;
         } 
         .hexagon:nth-child(4)::before
         {
-          border-bottom-color:#5e8ac6;
+          border-bottom-color:#1c5797;
         }
         .hexagon:nth-child(4)::after{
-          border-top-color:#5e8ac6;
+          border-top-color:#1c5797;
         }
+     
 
+        /* .hexagon:nth-child(5) {
+            background-color: #33FF57; 
+          }
+
+        .hexagon:nth-child(6) {
+            background-color: #5733FF; 
+          }
+
+        .hexagon:nth-child(7) {
+            background-color: #FF5733; 
+          } */
       
       /*1st Inner Hexagon */
       .hexagon-1-inner {
@@ -151,6 +169,7 @@
         margin: 39.26px 0;
         display: flex;
         justify-content: center; 
+        border-right: 0.91px solid #1c5797;
         
       }
      
@@ -158,8 +177,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right:101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
@@ -172,8 +191,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -185,21 +204,23 @@
       /*2nd Inner Hexagon */
       .hexagon-2-inner {
         position: relative;
-        width: 199px;
+        width:    199px;
         height: 128.52px;
         background-color: var(--inner_2_col, #111921);
         margin: 39.26px 0;
         display: flex;
         justify-content: center; 
-        border-right: 1px solid #e566b9; 
+        /* border-right: solid 1px #a02c77; */
+        
+
       }
 
       .hexagon-2-inner::before {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
@@ -212,8 +233,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -231,15 +252,17 @@
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
-        border-right: 0.91px solid #6ccba0; 
+        border-right: 0.91px solid #3f916c;
+        
+
       }
 
       .hexagon-3-inner::before {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
@@ -251,8 +274,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -269,14 +292,15 @@
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
+        border-right: 0.91px solid #1c5797;
       }
 
       .hexagon-4-inner::before {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
@@ -288,8 +312,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -312,12 +336,13 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
         border-bottom-color: var(--inner_5_col_bef, #111921);
+        
         /* border-bottom: 39.26px solid var(--secondary-light-gray); */
       }
 
@@ -325,8 +350,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -343,15 +368,15 @@
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
-        border-right: 0.91px solid #6ccba0; 
+        border-right: 0.91px solid #3f916c;
       }
 
       .hexagon-6-inner::before {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
@@ -363,8 +388,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -381,15 +406,17 @@
         margin: 39.26px 0;
         display: flex;
         justify-content: center;
-        border-right: 0.91px solid #5e8ac6; 
+        border-right: 0.91px solid #1c5797;
+     
+
       }
 
       .hexagon-7-inner::before {
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         bottom: 100%;
         border-bottom: 50px solid;
@@ -401,8 +428,8 @@
         content: "";
         position: absolute;
         width: 0;
-        border-left: 99px solid transparent;
-        border-right: 99px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 101px solid transparent;
         z-index: 1;
         top: 100%;
         border-top: 50px solid;
@@ -453,24 +480,8 @@
         }
       } */
 
-       @keyframes hello {
-         from{
-             transform: translateY(600px);
-             
-         }
-         to{
-          transform: translateY(0);
-          
-         }
-       } 
-      .hexagon-grid-container{
-        animation-name: hello;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-delay: 0s;
-        animation-iteration-count: 1;
-    
-      }
+   
+     
    
       .focus {
    
@@ -552,16 +563,7 @@
     </ul>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        const hexagons = document.querySelectorAll(".hexagon");
-        hexagons.forEach(function(hexagon, index) {
-            setTimeout(function() {
-                hexagon.style.opacity = "1";
-            }, index * 600); // Adjust the delay as needed
-        });
-    },1000); // 2-second delay
-});
+  
 function showContent(index) 
     {
       
